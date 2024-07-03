@@ -21,7 +21,7 @@ const App = () => {
 <>
 <Header/>
 <Switch>
-  <Route  path="/" component={Home} />
+  <Route  exact path="/" component={Home} />
   <Route exact path="/live" component={Live} />
   <Route exact path="/photos" component={Photos} />
   <Route exact path="/states" component={States} />
@@ -29,7 +29,7 @@ const App = () => {
   <Route exact path="/webstories" component={WebStories} />
   <Route exact path="/server" component={ServerErrorPage} />
   <Route exact path="/nodata" component={NoDataFound} />
-  <Route  path="*" component={Home} />
+  <Route  path="" component={Home} />
 </Switch>
 <Footer/>
 
